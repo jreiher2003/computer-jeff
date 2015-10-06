@@ -1,5 +1,11 @@
 body {
 
 }
+/* tap targets */
+a, button {
+	min-width: 3em;
+	min-height: 3em;
+}
 
 .container {}
+
