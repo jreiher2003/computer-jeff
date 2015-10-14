@@ -1,1 +1,1 @@
-a,button{min-width:3em;min-height:3em}p{font-size:2em}
+body,h1,h2,h3,h4{font-family:lato,sans-serif;font-weight:300}.logo,body,h1,h2,h3,h4{font-weight:300}.container{display:flex;flex-wrap:wrap}a,button{min-width:3em;min-height:3em}header{width:100%;background-color:red;padding:8px;margin:2px;border:1px solid #000}.logo{float:right;font-size:1.8em;padding-top:5px;padding-right:.2em;color:#fff;letter-spacing:3px}.bars a{font-size:2em;color:#fff;text-decoration:none}
