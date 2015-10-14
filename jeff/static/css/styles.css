@@ -1,13 +1,41 @@
 body {
-
+	font-family: 'lato', sans-serif;
+	font-weight: 300;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
 }
 /* tap targets */
 a, button {
 	min-width: 3em;
 	min-height: 3em;
 }
-p {
-	font-size: 2em;
+h1,h2,h3,h4 {
+	font-family: 'lato', sans-serif;
+	font-weight: 300;
 }
-.container {}
+header {
+	width: 100%;
+	background-color: red;
+	padding: 8px;
+	margin: 2px;
+	border: 1px solid black;
+}
+.logo {
+	/*position: relative;*/
+	float: right;
+	font-weight: 300;
+	font-size: 1.8em;
+	padding-top: 5px;
+	padding-right: .2em;
+	color: white;
+	letter-spacing: 3px;
+}
+.bars a {
+	font-size: 2em;
+	color: white;
+	text-decoration: none
+}
+
 
