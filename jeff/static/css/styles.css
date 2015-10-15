@@ -10,6 +10,9 @@ body {
   	-webkit-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
+.box {
+	width: 100%;
+}
 /* tap targets */
 a, button {
 	min-width: 3em;
@@ -20,7 +23,6 @@ h1,h2,h3,h4 {
 	font-weight: 300;
 }
 header {
-	width: 100%;
 	background-color: red;
 	padding: 8px;
 	margin: 2px;
