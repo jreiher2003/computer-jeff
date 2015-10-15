@@ -1,6 +1,8 @@
 body {
 	font-family: 'lato', sans-serif;
 	font-weight: 300;
+	margin: 0;
+	padding: 0;
 }
 .container {
 	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -12,15 +14,6 @@ body {
 }
 .box {
 	width: 100%;
-}
-/* tap targets */
-a, button {
-	min-width: 3em;
-	min-height: 3em;
-}
-h1,h2,h3,h4 {
-	font-family: 'lato', sans-serif;
-	font-weight: 300;
 }
 header {
 	background-color: red;
@@ -42,6 +35,15 @@ header {
 	font-size: 2em;
 	color: white;
 	text-decoration: none
+}
+/* tap targets */
+a, button {
+	min-width: 3em;
+	min-height: 3em;
+}
+h1,h2,h3,h4 {
+	font-family: 'lato', sans-serif;
+	font-weight: 300;
 }
 
 
