@@ -70,6 +70,7 @@ h1,h2,h3,h4 {
 }
 section {
 	height: 475px;
+	width: 100%;
 }
 
 footer {
@@ -79,4 +80,14 @@ footer {
 	color: white;
 }
 
+@media screen and (min-width:550px) {
+	body {
+		background-color: blue;
+	}
+}
 
+@media screen and (min-width: 800px) {
+	body {
+		background-color: green;
+	}
+}
