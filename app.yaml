@@ -18,6 +18,13 @@ libraries:
 - name: markupsafe
   version: "0.15"
 
+skip_files:
+- ^(node_modules)
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
 # inbound_services:
 # - warmup
 
