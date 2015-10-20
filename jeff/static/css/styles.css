@@ -37,10 +37,7 @@ header a {
 .logo {
 	position: relative;
 	float: right;
-/* 	font-size: 1.8em; */
-/* 	padding-top: 5px; */
-	padding-left: .5em;
-	padding-right: .5em;
+	padding: 0 .5em .1em .5em;
 	color: white;
 	letter-spacing: 3px;
 	font-weight: 300;
@@ -65,10 +62,56 @@ section {
 
 footer {
 	width: 100%;
-	height: 100px;
-	background-color: rgba(60,0,0,1);
-	color: white;
+	height: 100%;
+	background: -webkit-linear-gradient(rgba(90,0,0,1), rgba(10,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradientrgba(90,0,0,1), rgba(10,0,0,1)); /* For Opera 11.1 to 12.0 */
+ 	background: -moz-linear-gradient(rgba(90,0,0,1), rgba(10,0,0,1)); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(rgba(90,0,0,1), rgba(10,0,0,1)); /* Standard syntax */
+/* 	color: rgba(255,255,255,1); */
+/* 	text-align: center; */
 }
+.social {
+	text-align: center;
+	border-bottom: 1x solid red;
+
+}
+.info {
+	font-size: .8em;
+	text-align: center;
+}
+.social ul, .info ul {
+/* 	text-decoration:none; */
+	list-style-type: none;
+	display: inline-block;
+
+}
+.social li, .info li {
+	display: inline-block;
+}
+.info li {
+	padding-right: 1em;
+}
+.social li a, .info li a {
+/* 	color: rgba(255,255,255,1); */
+	color: rgba(128,128,128,1);
+}
+.info li a:hover {
+	color: rgba(255,255,255,1);
+}
+.fa-google-plus {
+	border-right: 2.5px solid rgba(128,128,128,1);
+	padding-right: 1em;
+}
+.fa-google-plus:hover {
+	color: rgba(255,255,255,1);
+}
+.fa-facebook {
+	padding-left: 1em;
+}
+.fa-facebook:hover {
+	color: rgba(255,255,255,1);
+}
+.info {}
 
 @media screen and (min-width:550px) {
 	body {
