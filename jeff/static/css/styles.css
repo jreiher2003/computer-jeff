@@ -16,53 +16,42 @@ body {
 
 header {
 	width: 100%;
-	background-color: red;
-	padding: 8px;
-	margin: 2px;
-	border: 1px solid black;
+	background: -webkit-linear-gradient(left,rgba(200,0,0,1),rgba(140,0,0,1)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right,rgba(200,0,0,1),rgba(140,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(200,0,0,1),rgba(140,0,0,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right,rgba(200,0,0,1),rgba(140,0,0,1) );
+	border: 1px solid rgba(0,0,0,.9);
+	box-shadow: 4px 5px 2px 5px rgba(0,0,0,1);
+	padding: 5px;
+	font-size: 1.5em;
 }
-.bars {
-    width: 50%;
-    position: relative;
-    float: left;
-}
-.bars a {
-	/*width: 50%;*/
-	font-size: 2em;
+header a {
+	
 	color: white;
-	text-decoration: none
-}
-/* . {
+	text-decoration: none;
 	position: relative;
-	width: 50%;
-	float: right;
-	font-weight: 600;
-	font-size: 1.8em;
- 	padding-top: 5px; 
- 	padding-right: .2em;
-	color: white;
-	letter-spacing: 3px; 
-}  */
-.icon {
-	position: relative;
-	width: 50%;
-	float: right;
-	font-size: 1.8em;
-	padding-top: 5px;
-	color: white;
-	letter-spacing: 3px;
-	font-weight: 300;
+	float: left;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.7);
+	padding-right: 1px;
 }
 .logo {
 	position: relative;
 	float: right;
-	padding-right: .75em;
+/* 	font-size: 1.8em; */
+/* 	padding-top: 5px; */
+	padding-left: .5em;
+	padding-right: .5em;
+	color: white;
+	letter-spacing: 3px;
+	font-weight: 300;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.7);
+
 }
 
 /* tap targets */
 a, button {
-	min-width: 3em;
-	min-height: 3em;
+	/* min-width: 3em; */
+	/* min-height: 3em; */
 }
 h1,h2,h3,h4 {
 	font-family: 'lato', sans-serif;
@@ -71,12 +60,13 @@ h1,h2,h3,h4 {
 section {
 	height: 475px;
 	width: 100%;
+	background-color: rgba(255,255,255,1);
 }
 
 footer {
 	width: 100%;
 	height: 100px;
-	background-color: black;
+	background-color: rgba(60,0,0,1);
 	color: white;
 }
 
@@ -84,6 +74,25 @@ footer {
 	body {
 		background-color: blue;
 	}
+	.icon {
+		order: 0;
+	}
+	.logo {
+		float: left;
+	}
+	.bars {
+		order: 1;
+	}
+	.bars a {
+		float: right;
+	}
+	section {
+		order: 2;
+	}
+	footer {
+		order:3;
+	}
+
 }
 
 @media screen and (min-width: 800px) {

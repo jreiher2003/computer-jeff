@@ -26,15 +26,10 @@
 	<body>
 		<div class="container">
 			<header>
-				<div class="bars">
-					<a href="#">&#9776;</a>
-				</div>
-				
-				<div class="icon">
-					<div class='logo'>&#x1f4bb;&nbsp;&nbsp;CJ</div>
-				</div>	
-				
+				<a href="#">&#9776;</a>
+				<div class='logo'>&#x1f4bb;&nbsp;&nbsp;Computer Jeff</div>
 			</header>
+			
 
 			
 			<section>
@@ -42,10 +37,26 @@
 			
 			</section>
 
-		</div>
 		<footer>
-			this is the footer
+			<address>this is the footer</address>
 		</footer>
+		</div>
+		
+		<script>
+	      /*
+	       * Open the drawer when the menu ison is clicked.
+	       */
+	      var menu = document.querySelector('#menu');
+	      var main = document.querySelector('main');
+	      var drawer = document.querySelector('.nav');
+	      menu.addEventListener('click', function(e) {
+	        drawer.classList.toggle('open');
+	        e.stopPropagation();
+	      });
+	      main.addEventListener('click', function() {
+	        drawer.classList.remove('open');
+	      });
+	    </script>
 		<script type="text/javascript" src="static/dist/js/main.min.js" ></script>
 	</body>
 </html>
