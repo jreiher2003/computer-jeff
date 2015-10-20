@@ -13,6 +13,15 @@ body {
   	-webkit-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
+/* tap targets */
+a, button {
+	/* min-width: 3em; */
+	/* min-height: 3em; */
+}
+h1,h2,h3,h4 {
+	/*font-family: 'lato', sans-serif;*/
+	font-weight: 300;
+}
 
 header {
 	width: 100%;
@@ -45,19 +54,17 @@ header a {
 
 }
 
-/* tap targets */
-a, button {
-	/* min-width: 3em; */
-	/* min-height: 3em; */
-}
-h1,h2,h3,h4 {
-	font-family: 'lato', sans-serif;
-	font-weight: 300;
-}
 section {
 	height: 475px;
 	width: 100%;
-	background-color: rgba(255,255,255,1);
+	background-color: #B1ADAD;
+	padding: 1em;
+}
+section .content {
+	background-color: white;
+	padding: 1em;
+	border: 1px solid #757575;
+	box-shadow: 1px 1px 1px #757575;
 }
 
 /* footer styles */
@@ -88,6 +95,7 @@ footer {
 }
 .social li a, .info li a {
 	color: rgba(128,128,128,1);
+	text-decoration: none;
 }
 .info li a:hover {
 	color: rgba(255,255,255,1);
