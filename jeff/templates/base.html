@@ -26,18 +26,23 @@
 	<body>
 		<div class="container">
 			<header>
-				<a href="#">&#9776;</a>
+				<a id="menu" href="#">&#9776;</a>
 				<div class='logo'></i>&#x1f4bb;&nbsp;&nbsp;Computer Jeff</div>
-				
-				<!-- <i class="fa fa-laptop"> -->
 			</header>
 			
-
+			 <!-- <nav class="nav">
+			    <ul>
+			      <li><a href="#">News</a></li>
+			      <li><a href="#">Events</a></li>
+			      <li><a href="#">Culture</a></li>
+			      <li><a href="#">Blog</a></li>
+			    </ul>
+  			</nav> -->
 			
 			<section>
-				<div class="content">
+				<!-- <div class="content">
 				
-				</div>
+				</div> -->
 
 			</section>
 
@@ -72,7 +77,7 @@
 	       * Open the drawer when the menu ison is clicked.
 	       */
 	      var menu = document.querySelector('#menu');
-	      var main = document.querySelector('main');
+	      var main = document.querySelector('section');
 	      var drawer = document.querySelector('.nav');
 	      menu.addEventListener('click', function(e) {
 	        drawer.classList.toggle('open');
