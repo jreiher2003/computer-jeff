@@ -58,10 +58,10 @@ section {
 	height: 475px;
 	width: 100%;
 	background-color: #B1ADAD;
-	padding: 1em;
+	padding: 1em 1em 1em 1em;
 }
-section .content {
-	height: 435px;
+section>.content {
+	height: 425px;
 	margin: auto;
 	background-color: white;
 	padding: 1em;
