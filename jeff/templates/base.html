@@ -24,61 +24,20 @@
 
 
 	<body>
-		<div class="container">
-			<header>
-				<a id="menu" href="#">&#9776;</a>
-				<div class='logo'></i>&#x1f4bb;&nbsp;&nbsp;Computer Jeff</div>
-			</header>
-			
-			<section>
-			
-				<div class="content">
-				
-				</div>
+		<header class="header">
+			<div class="header__inner">
+				<div class='logo'>&#x1f4bb;&nbsp;&nbsp;Computer Jeff</div>
+				<a id="menu" class="bars">&#9776;</a>
+			</div>
+		</header>
 
-			</section>
-
-			<footer>
-				<div class="social">
-					<ul>
-						<li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
-						<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-					</ul>
-				</div>
-
-				<div class="info">
-					<ul>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Legal Infomation</a></li>
-						<!-- <li><a href="#">Return Policy</a></li> -->
-						<li><a href="#">Site Map</a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					<!-- <img src="static/images/cj2.jpg"> -->
-					&#169;&nbsp;2015&nbsp;DSAC Limited Liability Company
-				</div>
-			</footer>
-
-		</div>
-
-
-		<script>
-	      /*
-	       * Open the drawer when the menu ison is clicked.
-	       */
-	      var menu = document.querySelector('#menu');
-	      var main = document.querySelector('section');
-	      var drawer = document.querySelector('.nav');
-	      menu.addEventListener('click', function(e) {
-	        drawer.classList.toggle('open');
-	        e.stopPropagation();
-	      });
-	      main.addEventListener('click', function() {
-	        drawer.classList.remove('open');
-	      });
-	    </script>
-		<script type="text/javascript" src="static/dist/js/main.min.js" ></script>
+		<nav id="drawer" class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#">News</a></li>
+				<li class="nav__item"><a href="#">Events</a></li>
+				<li class="nav__item"><a href="#">Culture</a></li>
+				<li class="nav__item"><a href="#">Blog</a></li>
+			</ul>
+		</nav>
 	</body>
-</html>
+	</html>
