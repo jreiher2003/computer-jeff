@@ -12,10 +12,9 @@
 	<meta name="description" content="{% block description %}{% endblock %}">
 	<meta name="keywords" content="only 20 keywords per site, putting the 10 most important first, example keywords, another keyword, and anoter">
 	<meta name="robots" content="index, follow">
-
-	<title>Computer Jeff</title>
-	<link rel="shortcut icon" href="/static/images/cj.jpg">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="shortcut icon" type="image/svg+xml" href="/static/images/images_dest/jwblack21-16_icon.ico">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,600' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href='static/css/styles.css'>
@@ -24,6 +23,13 @@
 
 
 	<body>
+		<div class="locations">
+		<ul>
+			<li>Venice</li>
+			<li>Englewood</li>
+			<li>Boca Grande</li>
+		</ul>
+	</div>
 		<header class="header">
 			<div class="header__inner">
 				<div class='logo'>&#x1f4bb;&nbsp;&nbsp;Computer Jeff</div>
@@ -33,33 +39,19 @@
 
 		<nav id="drawer" class="nav">
 			<ul class="nav__list">
-				<li class="nav__item"><a href="#">News</a></li>
-				<li class="nav__item"><a href="#">Events</a></li>
-				<li class="nav__item"><a href="#">Culture</a></li>
-				<li class="nav__item"><a href="#">Blog</a></li>
+				<li class="nav__item"><a href="#">Call Now</a></li>
+				<li class="nav__item"><a href="#">Virus Removal</a></li>
+				<li class="nav__item"><a href="#">Computer Tune-up</a></li>
+				<li class="nav__item"><a href="#">Pricing</a></li>
+				<li class="nav__item"><a href="#">Google+</a></li>
+				<li class="nav__item"><a href="#">Facebook</a></li>
 			</ul>
 		</nav>
 
 		<main>
 			<section class="content">
-
-				<section class="news top-news">
-					<h2 class="news__title">Top news <a href="#" class="news__more">+ more</a></h2>
-					<ul>
-						<li class="top-news__item">
-							<a href="#">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.</a>
-						</li>
-						<li class="top-news__item">
-							<a href="#">Squid lomo Kickstarter art lomo Kickstarter art party cronut scenester.</a>
-						</li>
-						<li class="top-news__item">
-							<a href="#">Organic raw denim lomo Kickstarter art Vice keffiyeh four loko.</a>
-						</li>
-						<li class="top-news__item">
-							<a href="#">Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</a>
-						</li>
-					</ul>
-				</section>
+				{% block content %}{% endblock %}
+				
 
 			</section>
 

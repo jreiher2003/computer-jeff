@@ -36,6 +36,23 @@ ul {
  *
  */
 
+ .locations {
+  width: 100%;
+  /*   border: 1px solid black; */
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #B7B5B5;
+  color: rgba(253,253,253,1);
+}
+.locations ul li{
+  display: inline-block;
+  margin-right: 50px;
+}
+.locations ul li:last-of-type {
+  margin-right: 0;
+}
+
+
 .header {
   width: 100%;
   min-height: 50px;
@@ -141,9 +158,9 @@ ul {
 main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #B1ADAD;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  background-color: #D0CFCF;
 }
 .content {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -204,7 +221,7 @@ main {
 /* footer styles */
 footer {
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   background: -webkit-linear-gradient(rgba(70,0,0,1), rgba(10,0,0,1)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradientrgba(70,0,0,1), rgba(10,0,0,1)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(rgba(70,0,0,1), rgba(10,0,0,1)); /* For Firefox 3.6 to 15 */
@@ -254,3 +271,36 @@ footer {
 }
 
 
+/*Home Page Styles*/
+/*###################*/
+.home-page {
+  width: 100%;
+  /*height: auto;*/
+  border: 1px solid grey;
+/*   box-shadow: 0 2px 2px 2px rgba(100, 100, 100, 0.26); */
+  box-shadow: 0px 3px 5px 0px rgba(3,3,3,0.2);
+  /*height: 475px;*/
+  background-color: white;
+  margin: 10px 10px 0 10px;
+  /*margin: auto;*/
+}
+.home-page:last-of-type {
+  margin-bottom: 10px;
+}
+
+.front-message {
+  width: 100%;
+  padding: 10px;
+  /*margin: 10px;*/
+}
+#top-message {
+  width: 100%;
+  background-image: url('/static/images/coffee-desk.jpg');
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,1);
+  /*opacity: .5;*/
+  height: 350px;
+}
+.front-message h1,.front-message h2, .front-message p {
+  color: rgba(0,0,0,1);
+}
