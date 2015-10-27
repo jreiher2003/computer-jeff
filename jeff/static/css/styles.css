@@ -275,6 +275,7 @@ footer {
 /*###################*/
 .home-page {
   width: 100%;
+  border: 1px solid black;
   /*height: 475px;*/
   /*background-color: white;*/
   margin: 10px 10px 0 10px;
