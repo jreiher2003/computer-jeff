@@ -3,7 +3,7 @@ from jeff import app
 
 @app.route('/')
 def index():
-    return render_template('base.html')
+    return render_template('home.html')
 
 @app.route('/virus-removal')
 def virusremoval():
