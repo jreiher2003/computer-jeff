@@ -36,6 +36,23 @@ ul {
  *
  */
 
+ .locations {
+  width: 100%;
+/*   border: 1px solid black; */
+  text-align: center;
+  font-size: 1.2em;
+  background-color: rgba(140,140,140,1);
+  color: rgba(203,203,203,1);
+}
+.locations ul li{
+  display: inline-block;
+  margin-right: 50px;
+}
+.locations ul li:last-of-type {
+  margin-right: 0;
+}
+
+
 .header {
   width: 100%;
   min-height: 50px;
@@ -141,8 +158,8 @@ ul {
 main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
   background-color: #B1ADAD;
 }
 .content {
@@ -258,29 +275,18 @@ footer {
 /*###################*/
 .home-page {
   width: 100%;
-  height: 475px;
-  margin: 0 10px 0 10px;
-  background-color: white;
+  /*height: 475px;*/
+  /*background-color: white;*/
+  margin: 10px 10px 0 10px;
+  /*margin: auto;*/
 }
-.locations {
-  width: 100%;
-/*   border: 1px solid black; */
-  text-align: center;
-  font-size: 1.2em;
-  background-color: rgba(140,140,140,1);
-  color: rgba(203,203,203,1);
-}
-.locations ul li{
-  display: inline-block;
-  margin-right: 50px;
-}
-.locations ul li:last-of-type {
-  margin-right: 0;
+.home-page:last-of-type {
+  margin-bottom: 10px;
 }
 
 .front-message {
   width: 100%;
-  background-color: #FDFAFA;
-  margin: 10px;
+  background-color: white;
+  /*margin: 10px;*/
   padding: 10px;
 }
