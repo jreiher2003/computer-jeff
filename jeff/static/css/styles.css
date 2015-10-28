@@ -365,5 +365,76 @@ footer {
   display: inline-block;
   color: rgba(255,255,255,1);
   padding: 10px;
-  font-size: 16px
+  font-size: 16px;
+}
+/* on-site service box */
+#on-site {
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
+  height: auto;
+}
+#on-site h2 {
+  color: rgba(255,255,255,1);
+  padding: 15px;
+  font-size: 2em;
+}
+#on-site .fa-car {
+  color: rgb(103, 3, 3);
+  padding: 10px;
+  box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
+}
+#on-site p {
+  color: rgba(255,255,255,1);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 0;
+  height: auto;
+}
+/* per hour box */
+#per-hour {
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
+  height: auto;
+}
+#per-hour h2 {
+  color: rgba(255,255,255,1);
+  padding: 15px;
+  font-size: 2em;
+}
+#per-hour .fa-usd {
+  color: rgb(103, 3, 3);
+  padding: 10px;
+  box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
+}
+#per-hour p {
+  color: rgba(255,255,255,1);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 0;
+  height: auto;
+}
+/* no-fix box */
+#no-fix {
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
+  height: auto;
+}
+#no-fix h2 {
+  color: rgba(255,255,255,1);
+  padding: 15px;
+  font-size: 2em;
+}
+#no-fix .fa-wrench {
+  color: rgb(103, 3, 3);
+  padding: 10px;
+/*   border: 1px solid black; */
+/*   border-radius: 50%; */
+  box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
+}
+#no-fix p {
+  color: rgba(255,255,255,1);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 0;
+  height: auto;
 }
