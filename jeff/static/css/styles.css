@@ -344,3 +344,26 @@ footer {
   font-size: 1.5em;
   margin-bottom: 3px;
 }
+
+/* locations box */
+#locations {
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
+  height: auto;
+}
+#locations h2 {
+  color: rgba(255,255,255,1);
+  padding: 15px;
+  font-size: 2em;
+}
+#locations .fa-compass {
+  color: rgb(103, 3, 3);
+  padding: 10px;
+  box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
+}
+#locations ul li {
+  display: inline-block;
+  color: rgba(255,255,255,1);
+  padding: 10px;
+  font-size: 16px
+}
