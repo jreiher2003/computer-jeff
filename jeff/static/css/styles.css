@@ -126,7 +126,7 @@ ul {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-size: 2em;
+  font-size: 1.6em;
   color: white;
 }
 .nav__item {
@@ -134,8 +134,7 @@ ul {
   display: list-item;
   border-bottom: 1px solid #5d0202;
   width: 100%;
-  text-align: center;
-  line-height: 24px;
+  text-align: left;
   padding: 24px;
   text-transform: uppercase;
 }
@@ -323,12 +322,12 @@ footer {
   border: 3px solid rgba(0,255,54,1);
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 110px;
+  margin-top: 15px;
 }
 #top-message.front-message a:hover,
 #top-message.front-message a:active {
   color: rgba(255,255,255,1);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+/*   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   background-color: rgba(0,255,54,.9); /* fallback */
   border-color: rgba(0,255,54,.9); /* fallback */
   transition: background-color 0.1s ease-in,
@@ -338,11 +337,12 @@ footer {
   font-size: 2em;
   padding: 0 5px;
   /* margin-top: 0; */
-  /* margin-bottom: 15px; */
+  margin-bottom: 140px;
 }
 .message p {
   font-size: 1.5em;
-  margin-bottom: 3px;
+  margin-bottom: -1px;
+  margin-top: 2px;
 }
 
 /* locations box */
