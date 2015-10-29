@@ -75,8 +75,7 @@ ul {
   margin-bottom:  0;
 }
 
-.logo {
-  /*computer jeff styles*/
+.logo {/*computer jeff styles*/
   position: relative;
   float: right;
   padding: 0 .5em .1em .5em;
@@ -400,16 +399,17 @@ footer {
   .message h1 {
       margin-bottom: 170px;
   }
+  .nav__item {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 550px) {
-  /*.front-message, #tablet {
-    width: 350px;
-  }*/
   #tablet {
     width: calc(50% - 20px);
-/*     margin-bottom: 0; */
+    margin-right: 0;
   }
-  #locations-served ul li {
-/*     margin-bottom: 0; */
+  #tablet:last-of-type {
+    margin-right: 0;
   }
+ 
 }
