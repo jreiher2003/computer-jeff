@@ -354,7 +354,7 @@ footer {
 #per-hour, #no-fix {
   text-align: center;
   background-color: rgba(0,0,0,.5);
-  height: auto;
+/*   height: auto; */
 }
 #locations h2, #on-site h2,
 #per-hour h2, #no-fix h2 {
