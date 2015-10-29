@@ -8,6 +8,7 @@ body, html {
   padding: 0;
   width: 100%;
   height: 100%;
+  min-width: 320px;
 }
 
 body {
@@ -55,6 +56,7 @@ ul {
 
 .header {
   width: 100%;
+/*   min-width: 315px; */
   min-height: 50px;
   background: -webkit-linear-gradient(left,rgba(200,0,0,1),rgba(140,0,0,1));/* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right,rgba(200,0,0,1),rgba(140,0,0,1));/* For Opera 11.1 to 12.0 */
@@ -119,7 +121,7 @@ ul {
   transform: translate(0, 0);
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.85);
   color: white;
 }
 .nav__list {
@@ -134,19 +136,36 @@ ul {
   display: list-item;
   border-bottom: 1px solid #5d0202;
   width: 100%;
-  text-align: left;
-  padding: 24px;
+  padding: 24px 0 24px 0;
   text-transform: uppercase;
 }
 .nav a {
   text-decoration: none;
   color: rgba(127,127,127,1);
-  text-align: center;
   padding: 1.5em;
 }
 .nav a:hover {
   text-decoration: underline;
-  color: white;
+  color: rgba(255,255,255,1);
+}
+#menu-phone {
+  text-align: center;
+}
+#menu-phone a {
+   transition: background-color 0.1s ease-out,
+          color 0.1s ease-out;
+  color: rgba(0,255,54,1);
+  border: 1px solid rgba(0,255,54,1);
+  padding: 10px;
+  text-decoration: none;
+}
+#menu-phone a:hover {
+   color: rgba(255,255,255,1);
+/*   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  background-color: rgba(0,255,54,.9); /* fallback */
+  border-color: rgba(0,255,54,.9); /* fallback */
+  transition: background-color 0.1s ease-in,
+        color 0.1s ease-in;
 }
 /*
  *
