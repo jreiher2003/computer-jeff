@@ -277,7 +277,7 @@ footer {
   width: 100%;
   border: 3px solid rbga(0,0,0,1);
   box-shadow: 0px 3px 5px 0px rgba(3,3,3,.5);
-  background-color: white;
+  background-color: rgba(255,255,255,.9);
   margin: 10px 10px 0 10px;
 }
 .home-page:last-of-type {
@@ -287,6 +287,7 @@ footer {
 .front-message {
   width: 100%;
 }
+/* #top-message box styles */
 #top-message {
   width: 100%;
   background-image: 
@@ -296,7 +297,7 @@ footer {
     ), url('/static/images/laptop_c.jpg');
   background-repeat: no-repeat;
   background-size:contain;
-  background-position: center;
+  background-position: bottom;
   height: 350px;
 }
 #top-message .message {
@@ -346,17 +347,23 @@ footer {
 }
 
 /* locations box */
-#locations {
+/* on-site service box */
+/* per hour box */
+/* no-fix box */
+#locations, #on-site, 
+#per-hour, #no-fix {
   text-align: center;
   background-color: rgba(0,0,0,.5);
   height: auto;
 }
-#locations h2 {
+#locations h2, #on-site h2,
+#per-hour h2, #no-fix h2 {
   color: rgba(255,255,255,1);
   padding: 15px;
   font-size: 2em;
 }
-#locations .fa-compass {
+#locations .fa-compass, #on-site .fa-car,
+#per-hour .fa-usd, #no-fix .fa-wrench {
   color: rgb(103, 3, 3);
   padding: 10px;
   box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
@@ -367,74 +374,13 @@ footer {
   padding: 10px;
   font-size: 16px;
 }
-/* on-site service box */
-#on-site {
-  text-align: center;
-  background-color: rgba(0,0,0,.5);
-  height: auto;
-}
-#on-site h2 {
-  color: rgba(255,255,255,1);
-  padding: 15px;
-  font-size: 2em;
-}
-#on-site .fa-car {
-  color: rgb(103, 3, 3);
-  padding: 10px;
-  box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
-}
-#on-site p {
-  color: rgba(255,255,255,1);
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 0;
-  height: auto;
-}
-/* per hour box */
-#per-hour {
-  text-align: center;
-  background-color: rgba(0,0,0,.5);
-  height: auto;
-}
-#per-hour h2 {
-  color: rgba(255,255,255,1);
-  padding: 15px;
-  font-size: 2em;
-}
-#per-hour .fa-usd {
-  color: rgb(103, 3, 3);
-  padding: 10px;
-  box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
-}
-#per-hour p {
-  color: rgba(255,255,255,1);
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 0;
-  height: auto;
-}
-/* no-fix box */
-#no-fix {
-  text-align: center;
-  background-color: rgba(0,0,0,.5);
-  height: auto;
-}
-#no-fix h2 {
-  color: rgba(255,255,255,1);
-  padding: 15px;
-  font-size: 2em;
-}
-#no-fix .fa-wrench {
-  color: rgb(103, 3, 3);
-  padding: 10px;
-/*   border: 1px solid black; */
-/*   border-radius: 50%; */
-  box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
-}
+
+#on-site p,#per-hour p,
 #no-fix p {
   color: rgba(255,255,255,1);
   padding: 10px;
   font-size: 16px;
   margin-bottom: 0;
-  height: auto;
 }
+
+
