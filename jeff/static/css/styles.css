@@ -234,7 +234,7 @@ footer {
   margin-top: 1em;
 }
 .social {
-  margin: .5em;
+  margin:  3.5em .1em 3.5em .1em;
 }
 .social ul, .info ul {
   list-style-type: none;
@@ -251,25 +251,19 @@ footer {
   color: rgba(200,200,200,1);
   text-decoration: none;
 }
-.info li a:hover {
+.social li a:hover, .info li a:hover {
   color: rgba(255,255,255,1);
+}
+.info li a:hover {
   text-decoration: underline;
 }
 .fa-google-plus {
   border-right: 2.5px solid rgba(128,128,128,1);
   padding-right: 1em;
 }
-.fa-google-plus:hover {
-  color: rgba(255,255,255,1);
-}
 .fa-facebook {
   padding-left: 1em;
 }
-.fa-facebook:hover {
-  color: rgba(255,255,255,1);
-}
-
-
 /*Home Page Styles*/
 /*###################*/
 .home-page {
