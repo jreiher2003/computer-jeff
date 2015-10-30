@@ -63,49 +63,10 @@ ul {
   /* min-width: 300px; */
   min-height: 50px;
   background: 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   -webkit-linear-gradient(left,rgba(200,0,0,1),rgba(140,0,0,1));/* For Safari 5.1 to 6.0 */
   background: 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   -o-linear-gradient(right,rgba(200,0,0,1),rgba(140,0,0,1));/* For Opera 11.1 to 12.0 */
   background: 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   -moz-linear-gradient(right, rgba(200,0,0,1),rgba(140,0,0,1));/* For Firefox 3.6 to 15 */
   background: linear-gradient(to right,rgba(200,0,0,1),rgba(140,0,0,1) );
   border: 1px solid rgba(0,0,0,.9);
@@ -357,9 +318,9 @@ footer {
       rgba(0, 0, 0, 0.5)
     ), url('/static/images/laptop_c.jpg');
   background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-/*   height: 350px; */
+  background-size: contain;
+  background-position: center;
+  /*   height: 350px; */
 }
 #top-message .message {
   text-align: center;
@@ -374,6 +335,10 @@ footer {
   background-color: rgba(0,0,0,.5);
   padding-top: 10px;
   padding-bottom: 25px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
 }
 #top-message.front-message a {
   display: inline-block;
@@ -402,14 +367,17 @@ footer {
   transition: background-color 0.1s ease-in,
         color 0.1s ease-in;
 }
-.message h1 {
+.front-message h1 {
+  text-align: center;
+  color: rgba(255,255,255,1);
+  padding: 7px;
   font-size: 2em;
   letter-spacing: 1px;
-  padding: 0 5px;
-  /* margin-top: 0; */
-  margin-bottom: 213px;
+  
 }
-.message p {
+.black p {
+  color: rgba(255,255,255,1);
+  text-align: center;
   font-size: 1.5em;
   margin-bottom: -1px;
   margin-top: 2px;
@@ -457,18 +425,15 @@ footer {
   .locations ul li {
     margin-right: 85px;
   }
-  .message h1 {
-      text-align: center;
-      margin-bottom: 222px;
-      margin-left: 20px;
-      margin-right: 20px
-  }
   .nav__item {
     text-align: center;
   }
   #tablet p {
     font-size: 1.8em;
     padding: 20px;
+  }
+  #top-message {
+    background-size: cover;
   }
 }
 @media screen and (min-width: 605px) {
@@ -482,6 +447,13 @@ footer {
   .locations ul li {
     margin-right: 140px;
   }
+  /*.home-page {
+       width: 50%; 
+      height: 50%;
+      background: url('/static/images/large.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }*/
   
 }
 @media screen and (min-width: 850px) {
@@ -512,8 +484,6 @@ footer {
     }
     .header {
       width: 35%;
-      /* min-width: 315px; */
-      /* min-height: 50px; */
     }
     main {
       width: 65%;
@@ -525,4 +495,5 @@ footer {
     .nav, .nav.open {
       display: none;
     }
+
 }
