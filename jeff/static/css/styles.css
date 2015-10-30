@@ -420,7 +420,8 @@ footer {
 }
 @media screen and (min-width: 605px) {
   #tablet {
-    width: calc(50% - 20px);
+    width: calc((100% - 30px)/2);
+    margin-right: 0px;
   }
    #tablet p {
     font-size: 16px;
