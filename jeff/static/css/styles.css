@@ -309,22 +309,30 @@ footer {
 /* #top-message box styles */
 #top-message {
   width: 100%;
+  height: 70vh;
   background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.5)
     ), url('/static/images/laptop_c.jpg');
   background-repeat: no-repeat;
-  background-size:contain;
-  background-position: bottom;
-  height: 350px;
+  background-size:cover;
+  background-position: top;
+/*   height: 350px; */
 }
 #top-message .message {
   text-align: center;
   position: absolute;
   color: rgba(255,255,255,1);
-  margin: 0;
+  /* margin: 56px; */
+  margin-top: 0;
+  margin-bottom: -11px;
   bottom: 10px;
+}
+.black {
+  background-color: rgba(0,0,0,.5);
+  padding-top: 10px;
+  padding-bottom: 25px;
 }
 #top-message.front-message a {
   display: inline-block;
@@ -358,7 +366,7 @@ footer {
   letter-spacing: 1px;
   padding: 0 5px;
   /* margin-top: 0; */
-  margin-bottom: 140px;
+  margin-bottom: 213px;
 }
 .message p {
   font-size: 1.5em;
@@ -403,6 +411,7 @@ footer {
   font-size: 16px;
   margin-bottom: 0;
 }
+
 @media screen and (min-width: 448px) {
   .locations ul li {
     margin-right: 85px;
