@@ -41,21 +41,21 @@ module.exports = function(grunt) {
     pagespeed: {
       options: {
         nokey: true,
-        url: "https://developers.google.com"
+        url: "https://developers.google.com/speed/docs/insights/v1/getting_started"
       },
-      prod: {
+      desktop: {
         options: {
-          url: "https://developers.google.com/speed/docs/insights/v1/getting_started",
+          // url: "https://developers.google.com/speed/docs/insights/v1/getting_started",
           locale: "en_GB",
           strategy: "desktop",
           threshold: 80
         }
       },
-      paths: {
+      mobile: {
         options: {
-          paths: ["/speed/docs/insights/v1/getting_started", "/speed/docs/about"],
+          // paths: "https://developers.google.com/speed/docs/insights/v1/getting_started",
           locale: "en_GB",
-          strategy: "desktop",
+          strategy: "mobile",
           threshold: 80
         }
       }
