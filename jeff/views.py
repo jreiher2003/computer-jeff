@@ -7,7 +7,7 @@ def index():
 
 @app.route('/virus-removal')
 def virusremoval():
-	return render_template('virusremoval.html')
+	return render_template('virus-removal.html')
 
 @app.route('/computer-repair')
 def computerrepair():
