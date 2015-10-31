@@ -124,7 +124,7 @@ ul {
   padding: 0;
   margin: 0;
   font-size: 1.6em;
-  color: white;
+  color: rgba(255,255,255,1);
 }
 .nav__item {
   box-sizing: border-box;
@@ -395,6 +395,9 @@ footer {
   font-size: 16px;
   margin-bottom: 0;
 }
+.desktop-menu {
+  display: none;
+}
 
 @media screen and (min-width: 448px) {
   .locations ul li {
@@ -460,6 +463,30 @@ footer {
     }
     .nav, .nav.open {
       display: none;
+    }
+    .desktop-menu {
+      display: block;
+      padding-left: 20px;
+      background-color: rgba(0,0,0,.7);
+      margin-top: 50px;
+    }
+    .desktop-menu li {
+      font-size: 1.7em;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      border-bottom: 1px solid rgba(200, 0, 0, 1);
+    }
+    .desktop-menu li:last-of-type {
+      border-bottom: 0;
+    }
+    .desktop-menu a {
+      color: rgba(127,127,127,1);
+      text-decoration: none;
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+    .desktop-menu a:hover {
+      color: rgba(255,255,255,1);
     }
 
 }
