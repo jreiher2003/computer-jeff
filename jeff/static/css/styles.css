@@ -213,7 +213,7 @@ main {
   line-height: 19.2px;
 }
 .top-news__item:before {
-  content: "Â» ";
+  content: "";
 }
 .top-news__item:last-child {
   border-bottom: none;
