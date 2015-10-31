@@ -37,7 +37,29 @@ module.exports = function(grunt) {
     watch: {
       files: ['jeff/static/css/*.css', 'jeff/static/js/*.js'],
       tasks: ['default']
-    }
+    },
+    pagespeed: {
+      options: {
+        nokey: true,
+        url: "https://developers.google.com"
+      },
+      prod: {
+        options: {
+          url: "https://developers.google.com/speed/docs/insights/v1/getting_started",
+          locale: "en_GB",
+          strategy: "desktop",
+          threshold: 80
+        }
+      },
+      paths: {
+        options: {
+          paths: ["/speed/docs/insights/v1/getting_started", "/speed/docs/about"],
+          locale: "en_GB",
+          strategy: "desktop",
+          threshold: 80
+        }
+      }
+}
 
 
   });
@@ -51,6 +73,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-pagespeed');
 
   grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
 };
