@@ -195,17 +195,41 @@ main {
   margin: 10px;
   padding: 1em;
 }
+.sales ol {
+  margin-bottom: 1em;
+}
 .sales__title {
   font-weight: 900;
   border-bottom: 1px solid #E0E0E0;
   line-height: 24px;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
+}
+.sales__sub__title {
+  margin-top: 1em;
+  font-size: 1.5em;
 }
 .sales__item{
   /*border-bottom: 1px solid #E0E0E0;*/
-  padding: 1em 0;
+  /*padding: 1em 0;*/
   line-height: 19.2px;
+}
+.sales__item:last-of-type {
+  margin-bottom: 1em;
+}
+.vr {
+  width: 100%;
+  margin: auto auto;
+}
+a.virus-removal-cta {
+  position: relative;
+  padding: 0px;
+  margin: 37px;
+  width: auto;
+  height: auto;
+  background-color: green;
+  color: white;
+  font-size: 1.4em;
 }
 
 
