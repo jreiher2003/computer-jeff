@@ -195,6 +195,9 @@ main {
   margin: 10px;
   padding: 1em;
 }
+.sales__header {
+  text-align: center;
+}
 .sales ol {
   margin-bottom: 1em;
 }
@@ -202,8 +205,13 @@ main {
   font-weight: 900;
   border-bottom: 1px solid #E0E0E0;
   line-height: 24px;
-  font-size: 24px;
-  text-align: center;
+  font-size: 23px;
+  /* text-align: center; */
+}
+.profile {
+  position: relative;
+  margin-right: em;
+  
 }
 .sales__sub__title {
   margin-top: 1em;
@@ -241,7 +249,17 @@ a.virus-removal-cta:hover {
   transition: background-color 0.2s ease-in,
         color 0.2s ease-in;
 }
-
+/*contact page*/
+/*################*/
+h5.contact {
+  margin-top: 25px;
+  font-size: 1.5em;
+}
+p.h__o {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
 
 /* footer styles */
 footer {
