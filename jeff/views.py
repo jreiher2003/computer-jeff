@@ -11,7 +11,7 @@ def virusremoval():
 
 @app.route('/computer-repair')
 def computerrepair():
-	return render_template('computerrepair.html')
+	return render_template('computer-tune-up.html')
 
 @app.route('/contact-us')
 def contact():
