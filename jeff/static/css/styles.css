@@ -503,6 +503,10 @@ ol.rounded-list a {
 .sales__item:last-of-type {
   margin-bottom: 1em;
 }*/
+.button-button {
+  width: 100%;
+  text-align: center;
+}
 a.virus-removal-cta {
   text-align: center;
   padding: 10px 30px;
@@ -637,5 +641,9 @@ p.h__o {
     }
     .desktop-menu a:hover {
       color: rgba(255,255,255,1);
+    }
+    a.virus-removal-cta {
+      margin: 160px;
+      padding: 10px 45px;
     }
 }
