@@ -352,6 +352,8 @@ footer {
   display: none;
 }
 /*virus-removal page*/
+/* computer repair */
+/* computer tune-up */
 /*#####################*/
 section.sales {
   width: 100%;
@@ -363,17 +365,32 @@ section.sales {
   margin-top: 0;
   padding: 1em;
 }
-div.repair {
+.pitch {
   width: 100%;
   height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+div.removal {
    background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ), url('/static/images/computerhands.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+}
+div.repair {
+  
+  background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6),        
+          rgba(0, 0, 0, 0.6)      
+       ), url('/static/images/startup-photos.jpg');
+}
+div.tune-up {
+  background-image: linear-gradient(
+              rgba(0, 0, 0, 0.4),                    
+              rgba(0, 0, 0, 0.4)               
+              ), url('/static/images/desk.jpg');
 }
 div.sales__header {
   text-align: center;
@@ -430,7 +447,7 @@ a.virus-removal-cta {
   text-decoration:none;
 }
 a.virus-removal-cta:hover {
-  background-color: rgba(0,255,54,1);
+  background-color: rgba(0,178,51,1);
   color: rgb(255, 255, 255);
   text-decoration:underline;
   transition: background-color 0.2s ease-in,
