@@ -381,15 +381,15 @@ div.removal {
 }
 div.repair {
   background-image: linear-gradient(
-          rgba(0, 0, 0, 0.6),        
-          rgba(0, 0, 0, 0.6)      
-       ), url('/static/images/startup-photos.jpg');
+          rgba(0, 0, 0, 0.3),        
+          rgba(0, 0, 0, 0.3)      
+       ), url('/static/images/computer_arms.jpg');
 }
 div.tune-up {
   background-image: linear-gradient(
-              rgba(0, 0, 0, 0.4),                    
-              rgba(0, 0, 0, 0.4)               
-              ), url('/static/images/desk.jpg');
+              rgba(0, 0, 0, 0.3),                    
+              rgba(0, 0, 0, 0.3)               
+              ), url('/static/images/desk_grey.jpg');
 }
 div.sales__header {
   text-align: center;
@@ -447,6 +447,7 @@ ol.rounded-list {
 }
 p.ol-title {
   font-size: 1.7em;
+  padding-left: .5em;
   padding-bottom:0;
   border-bottom: 1px solid rgba(150,150,150,1);
   box-shadow: 1px 1px 3px rgba(150,150,150,1);
@@ -495,14 +496,6 @@ ol.rounded-list a {
     /*border-radius: 2em;*/
     transition: all .3s ease-out;
 }
-
-/*.sales__item{
-  line-height: 22.2px;
-  font-size: 14px;
-}
-.sales__item:last-of-type {
-  margin-bottom: 1em;
-}*/
 .button-button {
   width: 100%;
   text-align: center;
