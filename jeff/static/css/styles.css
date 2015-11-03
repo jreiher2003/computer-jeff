@@ -283,8 +283,8 @@ footer {
   text-decoration: none;
   transition: background-color 0.1s ease-out,
           color 0.1s ease-out;
-  color: rgba(0,255,54,1);
-  border: 3px solid rgba(0,255,54,1);
+  color: rgba(0,220,51,1);
+  border: 3px solid rgba(0,220,51,1);
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 15px;
@@ -293,8 +293,8 @@ footer {
 #top-message.front-message a:hover,
 #top-message.front-message a:active {
   color: rgba(255,255,255,1);
-  background-color: rgba(0,255,54,.9); /* fallback */
-  border-color: rgba(0,255,54,.9); /* fallback */
+  background-color: rgba(0,220,54,.9); /* fallback */
+  border-color: rgba(0,220,54,.9); /* fallback */
   transition: background-color 0.1s ease-in,
         color 0.1s ease-in;
 }
@@ -393,15 +393,16 @@ h4.sales__sub__title {
   padding: 10px;
 }
 .virus-removal-top {
-  background-color: rgba(0,255,54,1);
+  background-color: rgba(0,178,51,1);
   color: rgba(255,255,255,1);
+  border: 2px solid rgba(0,178,51,1);
   text-shadow: 1px 1px 1px black;
   font-size: 1.6em;
 }
 a.virus-removal-top:hover {
   background-color: transparent;
   color: rgba(255,255,255,1);
-  border: 2px solid rgba(0,255,54,1);
+  border: 2px solid rgba(0,178,51,1);
 }
 .sales ol {
   margin-bottom: 1em;
@@ -421,8 +422,8 @@ a.virus-removal-cta {
   padding: 10px;
   margin: 37px;
   background-color: rgba(255,255,255,0);
-  color: rgba(0,255,54,1);
-  border: 1px solid rgba(0,255,54,1);
+  color: rgba(0,178,51,1);
+  border: 1px solid rgba(0,178,51,1);
   height: auto;
   font-size: 1.4em;
   font-weight: 600;
