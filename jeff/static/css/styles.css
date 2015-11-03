@@ -43,8 +43,8 @@ ul {
   width: 100%;
   text-align: center;
   font-size: 1.2em;
-  background-color: #B7B5B5;
-  color: rgba(253,253,253,1);
+  background-color: rgb(183, 181, 181);
+  color: rgba(255,255,255,1);
 }
 .locations ul li{
   display: inline-block;
@@ -404,9 +404,10 @@ h2.sales__title {
 }
 h4.sales__sub__title {
   margin-top: .5em;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: left;
   padding: 10px;
+  letter-spacing: 1px;
 }
 .virus-removal-top {
   background-color: rgba(0,178,51,1);
@@ -418,32 +419,55 @@ h4.sales__sub__title {
 a.virus-removal-top:hover {
   background-color: transparent;
   color: rgba(255,255,255,1);
-  border: 2px solid rgba(0,178,51,1);
+  border: 2px solid rgba(0,178,51,.8);
 }
 /*.sales ol {
   margin-bottom: 1em;
 }*/
+.list-header {
+  background-color: rgba(183,181,181,1);
+  border: 1px solid rgba(153,161,161,1);
+  box-shadow: 1px 1px 3px rgba(127,127,127,1);
+}
+.list-header p {
+  font-size: 2em;
+  text-align: left;
+  color: rgba(255,255,255,1);
+  margin-top: 0;
+  padding: 10px;
+  padding-bottom: 25px;
+}
 ol.rounded-list {
   counter-reset: li;/* Initiate a counter */
   list-style: none;/* Remove default numbering */*
   list-style: decimal;/* Keep using default numbering for IE6/7 */
-  /*font: 15px 'trebuchet MS', 'lucida sans';*/
   font-size: 14px;
   padding: 0;
-  /* margin-bottom: 4em; */
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+p.ol-title {
+  font-size: 1.7em;
+  padding-bottom:0;
+  border-bottom: 1px solid rgba(150,150,150,1);
+  box-shadow: 1px 1px 3px rgba(150,150,150,1);
+  color: rgba(150,150,150,1);
+}
+p.ol-title::first-letter,
+.sales p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
 }
 ol.rounded-list a {
   position: relative;
   display: block;
-  padding: .4em .4em .4em 2em;
-  *padding: .4em;
+  padding: .4em .4em .4em 2em;*
+  padding: .4em;
   margin: .5em 0;
-  background: #ddd;
+  background: rgb(221, 221, 221);
   color: #444;
   text-decoration: none;
   border-radius: .3em;
-  transition: all .3s ease-out;   
+  transition: all .3s ease-out;
 }
 .rounded-list a:hover{
     background: #eee;
@@ -471,33 +495,7 @@ ol.rounded-list a {
     /*border-radius: 2em;*/
     transition: all .3s ease-out;
 }
-/*ol.square-list:before {
-  content: counter(li);
-  counter-increment: li;
-  position: absolute; 
-  left: -2.5em;
-  top: 50%;
-  margin-top: -1em;
-  background: #fa8072;
-  height: 2em;
-  width: 2em;
-  line-height: 2em;
-  text-align: center;
-  font-weight: bold;
-}
-ol.square-list:after {
-  position: absolute; 
-  content: '';
-  border: .5em solid transparent;
-  left: -1em;
-  top: 50%;
-  margin-top: -.5em;
-  transition: all .3s ease-out;        
-}*/
-.sales p {
-  font-size: 1.4em;
-  text-align: left;
-}
+
 /*.sales__item{
   line-height: 22.2px;
   font-size: 14px;
