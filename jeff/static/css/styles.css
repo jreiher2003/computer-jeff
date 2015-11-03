@@ -351,6 +351,8 @@ footer {
 .desktop-menu {
   display: none;
 }
+/*virus-removal page*/
+/*#####################*/
 section.sales {
   width: 100%;
   height: auto;
@@ -373,7 +375,6 @@ div.repair {
   background-size: cover;
   background-position: center;
 }
-
 div.sales__header {
   text-align: center;
   color: white;
@@ -397,7 +398,6 @@ h4.sales__sub__title {
   text-shadow: 1px 1px 1px black;
   font-size: 1.6em;
 }
-
 a.virus-removal-top:hover {
   background-color: transparent;
   color: rgba(255,255,255,1);
@@ -410,11 +410,6 @@ a.virus-removal-top:hover {
   font-size: 1.4em;
   text-align: left;
 }
-.profile {
-  position: relative;
-  margin-right: em;
-  
-}
 .sales__item{
   line-height: 22.2px;
   font-size: 14px;
@@ -422,7 +417,6 @@ a.virus-removal-top:hover {
 .sales__item:last-of-type {
   margin-bottom: 1em;
 }
-
 a.virus-removal-cta {
   padding: 10px;
   margin: 37px;
@@ -434,7 +428,6 @@ a.virus-removal-cta {
   font-weight: 600;
   text-decoration:none;
 }
-
 a.virus-removal-cta:hover {
   background-color: rgba(0,255,54,1);
   color: rgb(255, 255, 255);
