@@ -304,6 +304,7 @@ footer {
   padding: 15px;
   font-size: 2em;
   letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.7);
 }
 .black p {
   color: rgba(255,255,255,1);
