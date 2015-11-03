@@ -380,7 +380,6 @@ div.removal {
     ), url('/static/images/computerhands.jpg');
 }
 div.repair {
-  
   background-image: linear-gradient(
           rgba(0, 0, 0, 0.6),        
           rgba(0, 0, 0, 0.6)      
@@ -421,20 +420,91 @@ a.virus-removal-top:hover {
   color: rgba(255,255,255,1);
   border: 2px solid rgba(0,178,51,1);
 }
-.sales ol {
+/*.sales ol {
   margin-bottom: 1em;
+}*/
+ol.rounded-list {
+  counter-reset: li;/* Initiate a counter */
+  list-style: none;/* Remove default numbering */*
+  list-style: decimal;/* Keep using default numbering for IE6/7 */
+  /*font: 15px 'trebuchet MS', 'lucida sans';*/
+  font-size: 14px;
+  padding: 0;
+  /* margin-bottom: 4em; */
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
+ol.rounded-list a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  *padding: .4em;
+  margin: .5em 0;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: all .3s ease-out;   
+}
+.rounded-list a:hover{
+    background: #eee;
+}
+
+.rounded-list a:hover:before{
+    transform: rotate(360deg);  
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: rgb(0, 178, 51);
+    color: rgba(255,255,255,1);
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .1em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    /*border-radius: 2em;*/
+    transition: all .3s ease-out;
+}
+/*ol.square-list:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute; 
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #fa8072;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+ol.square-list:after {
+  position: absolute; 
+  content: '';
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: all .3s ease-out;        
+}*/
 .sales p {
   font-size: 1.4em;
   text-align: left;
 }
-.sales__item{
+/*.sales__item{
   line-height: 22.2px;
   font-size: 14px;
 }
 .sales__item:last-of-type {
   margin-bottom: 1em;
-}
+}*/
 a.virus-removal-cta {
   padding: 10px;
   margin: 37px;
