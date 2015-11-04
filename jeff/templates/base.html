@@ -1,121 +1,102 @@
 <!DOCTYPE html>
 <html>
-	<head>
+<head>
 	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="author" content="Computer Jeff">
+	<meta name="author" content="Jeffrey Reiher">
 	<meta name='copyright' content="DSAC LLC">
 	<meta name='language' content="english">
 	<meta name="description" content="{% block description %}{% endblock %}">
-	<meta name="keywords" content="only 20 keywords per site, putting the 10 most important first, example keywords, another keyword, and anoter">
+	<meta name="keywords" content="{% block keywords %}{% endblock %}">
 	<meta name="robots" content="index, follow">
 	<title>{% block title %}{% endblock %}</title>
 	<link rel="shortcut icon" type="image/svg+xml" href="/static/images/images_dest/jwblack21-16_icon.ico">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,600' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" type="text/css" href='static/css/styles.css'>
 	<!-- <link rel="stylesheet" type="text/css" href="static/dist/css/styles.min.css"> -->
-	</head>
-
-
-	<body>
-		<div class="locations">
-			<ul>
-				<li>Venice</li>
-				<li>Englewood</li>
-				<li>Boca Grande</li>
-			</ul>
-		</div>
-		<section id="content-desktop">
-			<header class="header">
-				<div class="header__inner">
-					<div class='logo foo'>&#x1f4bb;&nbsp;&nbsp;Computer Jeff</div>
-					<a id="menu" class="bars">&#9776;</a>
-				</div>
-
-					<div class="desktop-menu">
-						<ul>
-							<li><a href="/"><i class="fa fa-home"></i>&nbsp;|&nbsp;Home</a></li>
-							<li><a href="/virus-removal"><i class="fa fa-shield"></i>&nbsp;|&nbsp;Virus Removal</a></li>
-							<li><a href="/computer-repair"><i class="fa fa-wrench"></i>&nbsp;|&nbsp;Computer Repair</a></li>
-							<li><a href="/computer-tune-up"><i class="fa fa-tachometer"></i>&nbsp;|&nbsp;Computer Tune-up</a></li>
-							<!-- <li><a href="/pricing"><i class="fa fa-usd"></i>&nbsp;|&nbsp;Pricing</a></li> -->
-							<li><a href="/contact-us"><i class="fa fa-user"></i>&nbsp;|&nbsp;Contact Us</a></li>
-							<li><a href="#"><i class="fa fa-google"></i>&nbsp;|&nbsp;Google+</a></li>
-							<li><a href="#"><i class="fa fa-facebook-official"></i>&nbsp;|&nbsp;Facebook</a></li>
-						</ul>
-					</div>
-
-			</header>
-
-			<nav id="drawer" class="nav">
-				<ul class="nav__list">
-					<li class="nav__item" id="menu-phone"><a href="tel:+1-941-585-3084"><i class="fa fa-phone"></i>
-						&nbsp;&nbsp;Call Us Now!
-					</a></li>
-					<li class="nav__item"><a href="/"><i class="fa fa-home"></i>&nbsp;|&nbsp;Home</a></li>
-					<li class="nav__item"><a href="/virus-removal"><i class="fa fa-shield"></i>&nbsp;|&nbsp;Virus Removal</a></li>
-					<li class="nav__item"><a href="/computer-repair"><i class="fa fa-wrench"></i>&nbsp;|&nbsp;Computer Repair</a></li>
-					<li class="nav__item"><a href="/computer-tune-up"><i class="fa fa-tachometer"></i>&nbsp;|&nbsp;Computer Tune-up</a></li>
-					<!-- <li class="nav__item"><a href="/pricing"><i class="fa fa-usd"></i>&nbsp;|&nbsp;Pricing</a></li> -->
-					<li class="nav__item"><a href="/contact-us"><i class="fa fa-user"></i>&nbsp;|&nbsp;Contact Us</a></li>
-					<li class="nav__item"><a href="#"><i class="fa fa-google"></i>&nbsp;|&nbsp;Google+</a></li>
-					<li class="nav__item"><a href="#"><i class="fa fa-facebook-official"></i>&nbsp;|&nbsp;Facebook</a></li>
+</head>
+<body>
+	<div class="locations">
+		<ul>
+			<li>Venice</li>
+			<li>Englewood</li>
+			<li>Boca Grande</li>
+		</ul>
+	</div>
+	<section id="content-desktop">
+		<header class="header">
+			<div class="header__inner">
+				<div class='logo foo'>&#x1f4bb;&nbsp;&nbsp;Computer Jeff</div>
+				<a id="menu" class="bars">&#9776;</a>
+			</div>
+			<div class="desktop-menu">
+				<ul>
+					<li><a href="/"><i class="fa fa-home"></i>&nbsp;|&nbsp;Home</a></li>
+					<li><a href="/virus-removal"><i class="fa fa-shield"></i>&nbsp;|&nbsp;Virus Removal</a></li>
+					<li><a href="/computer-repair"><i class="fa fa-wrench"></i>&nbsp;|&nbsp;Computer Repair</a></li>
+					<li><a href="/computer-tune-up"><i class="fa fa-tachometer"></i>&nbsp;|&nbsp;Computer Tune-up</a></li>
+					<!-- <li><a href="/pricing"><i class="fa fa-usd"></i>&nbsp;|&nbsp;Pricing</a></li> -->
+					<li><a href="/contact-us"><i class="fa fa-user"></i>&nbsp;|&nbsp;Contact Us</a></li>
+					<li><a href="#"><i class="fa fa-google"></i>&nbsp;|&nbsp;Google+</a></li>
+					<li><a href="#"><i class="fa fa-facebook-official"></i>&nbsp;|&nbsp;Facebook</a></li>
 				</ul>
-			</nav>
-
+			</div>
+		</header>
+		<nav id="drawer" class="nav">
+			<ul class="nav__list">
+				<li class="nav__item" id="menu-phone"><a href="tel:+1-941-585-3084"><i class="fa fa-phone"></i>
+					&nbsp;&nbsp;Call Us Now!
+				</a></li>
+				<li class="nav__item"><a href="/"><i class="fa fa-home"></i>&nbsp;|&nbsp;Home</a></li>
+				<li class="nav__item"><a href="/virus-removal"><i class="fa fa-shield"></i>&nbsp;|&nbsp;Virus Removal</a></li>
+				<li class="nav__item"><a href="/computer-repair"><i class="fa fa-wrench"></i>&nbsp;|&nbsp;Computer Repair</a></li>
+				<li class="nav__item"><a href="/computer-tune-up"><i class="fa fa-tachometer"></i>&nbsp;|&nbsp;Computer Tune-up</a></li>
+				<!-- <li class="nav__item"><a href="/pricing"><i class="fa fa-usd"></i>&nbsp;|&nbsp;Pricing</a></li> -->
+				<li class="nav__item"><a href="/contact-us"><i class="fa fa-user"></i>&nbsp;|&nbsp;Contact Us</a></li>
+				<li class="nav__item"><a href="#"><i class="fa fa-google"></i>&nbsp;|&nbsp;Google+</a></li>
+				<li class="nav__item"><a href="#"><i class="fa fa-facebook-official"></i>&nbsp;|&nbsp;Facebook</a></li>
+			</ul>
+		</nav>
 		<main>
 			<section class="content">
 				{% block content %}{% endblock %}
-				
-
 			</section>
-
 		</section>
-			<footer>
-				<div class="social">
-					<ul>
-						<li><a href="#"><i class="fa fa-google-plus fa-4x"></i></a></li>
-						<li><a href="#"><i class="fa fa-facebook fa-4x"></i></a></li>
-					</ul>
-				</div>
-
-				<div class="info">
-					<ul>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Legal Infomation</a></li>
-						<!-- <li><a href="#">Return Policy</a></li> -->
-						<li><a href="#">Site Map</a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					<!-- <img src="static/images/cj2.jpg"> -->
-					&#169;&nbsp;2015&nbsp;DSAC Limited Liability Company
-				</div>
-			</footer>
-
-		</main>
-		<script>
-      /*
-       * Open the drawer when the menu ison is clicked.
-       */
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('.nav');
-
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-
-    </script>
-	</body>
-	</html>
+		<footer>
+			<div class="social">
+				<ul>
+					<li><a href="#"><i class="fa fa-google-plus fa-4x"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook fa-4x"></i></a></li>
+				</ul>
+			</div>
+			<div class="info">
+				<ul>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Legal Infomation</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				&#169;&nbsp;2015&nbsp;DSAC Limited Liability Company
+			</div>
+		</footer>
+	</main>
+	<script>
+       var menu = document.querySelector('#menu');
+       var main = document.querySelector('main');
+       var drawer = document.querySelector('.nav');
+       menu.addEventListener('click', function(e) {
+       	drawer.classList.toggle('open');
+       	e.stopPropagation();
+       });
+       main.addEventListener('click', function() {
+       	drawer.classList.remove('open');
+       });
+       </script>
+   </body>
+</html>
