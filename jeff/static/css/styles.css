@@ -1,8 +1,3 @@
-/*
- *
- * Common
- * 
- */
 body, html {
   margin: 0;
   padding: 0;
@@ -10,36 +5,24 @@ body, html {
   height: 100%;
   min-width: 320px;
 }
-
 body {
   font-family: 'lato', sans-serif;
   font-size: 12px;
   color: #424242;
-  /*border: 1px solid black;*/
   background-color: #D5D8DA;
 }
-
 h1, h2, h3, h4, h5 {
   margin: 0; 
 }
-
 header, nav, footer, section, article, div {
   box-sizing: border-box;
 }
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-/*
- *
- * Header
- *
- */
-
- .locations {
+.locations {
   width: 100%;
   text-align: center;
   font-size: 1.2em;
@@ -94,17 +77,12 @@ ul {
   font-size: 2em;
   margin-left: .2em;
 }
-/*
- *
- * Top Level Navigation
- *
- */
 .nav {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   z-index: 10;
-  background-color: #fff;
+  background-color: rgba(255,255,255,1);
   width: 300px;
   position: absolute;
   -webkit-transform: translate(-500px, 0px);
@@ -117,7 +95,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.85);
-  color: white;
+  color: rgba(255,255,255,1);
 }
 .nav__list {
   width: 100%;
@@ -129,7 +107,7 @@ ul {
 .nav__item {
   box-sizing: border-box;
   display: list-item;
-  border-bottom: 1px solid #5d0202;
+  border-bottom: 1px solid rgba(93,2,2,1);
   width: 100%;
   padding: 24px 0 24px 0;
   text-transform: uppercase;
@@ -147,29 +125,23 @@ ul {
   text-align: center;
 }
 #menu-phone a {
-   transition: background-color 0.1s ease-out,
-          color 0.1s ease-out;
-  color: rgba(0,255,54,1);
-  border: 1px solid rgba(0,255,54,1);
-  padding: 10px;
-  text-decoration: none;
+ transition: background-color 0.1s ease-out,
+ color 0.1s ease-out;
+ color: rgba(0,255,54,1);
+ border: 1px solid rgba(0,255,54,1);
+ padding: 10px;
+ text-decoration: none;
 }
 #menu-phone a:hover {
-   color: rgba(255,255,255,1);
-  background-color: rgba(0,255,54,.9); /* fallback */
-  border-color: rgba(0,255,54,.9); /* fallback */
-  transition: background-color 0.1s ease-in,
-        color 0.1s ease-in;
+ color: rgba(255,255,255,1);
+ background-color: rgba(0,255,54,.9); /* fallback */
+ border-color: rgba(0,255,54,.9); /* fallback */
+ transition: background-color 0.1s ease-in,
+ color 0.1s ease-in;
 }
-/*
- *
- * Main
- *
- */
-
 main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  background-color: #D0CFCF;
+  background-color: rgba(208,207,207,1);
 }
 .content {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -179,24 +151,14 @@ main {
   -webkit-flex-wrap: wrap; 
   flex-wrap: wrap;
 }
-
-/*
- *
- * Top News
- *
- */
-
-
-/* footer styles */
 footer {
   width: 100%;
-  /*height: 100%;*/
-  background: -webkit-linear-gradient(rgba(70,0,0,1), rgba(10,0,0,1)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradientrgba(70,0,0,1), rgba(10,0,0,1)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(70,0,0,1), rgba(10,0,0,1)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(70,0,0,1), rgba(10,0,0,1)); /* Standard syntax */
+  background:-webkit-linear-gradient(180deg, rgba(70,0,0,1) 20%, rgba(10,0,0,1));/* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(180deg, rgba(70,0,0,1) 20%, rgba(10,0,0,1));/* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(180deg, rgba(70,0,0,1) 20%, rgba(10,0,0,1));/* For Firefox 3.6 to 15 */
+  background: linear-gradient(180deg, rgba(70,0,0,1) 20%, rgba(10,0,0,1));/* Standard syntax */
   color: rgba(200,200,200,1);
-  text-align: center; 
+  text-align: center;
   font-size: 1em;
   padding: 1em;
 }
@@ -234,8 +196,6 @@ footer {
 .fa-facebook {
   padding-left: 1em;
 }
-/*Home Page Styles*/
-/*###################*/
 .home-page {
   position: relative;
   width: 100%;
@@ -250,14 +210,17 @@ footer {
 #top-message-box {
   margin-top: 8px;
 }
-/* #top-message box styles */
 #top-message {
   width: 100%;
   height: 70vh;
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.5)
+  background-color: rgba(127,127,127,.8);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
+    ), url('/static/images/laptop_c.jpg');
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
+    ), url('/static/images/laptop_c.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
+    ), url('/static/images/laptop_c.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
     ), url('/static/images/laptop_c.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -282,7 +245,7 @@ footer {
   outline: none;
   text-decoration: none;
   transition: background-color 0.1s ease-out,
-          color 0.1s ease-out;
+  color 0.1s ease-out;
   color: rgba(0,220,51,1);
   border: 3px solid rgba(0,220,51,1);
   font-size: 16px;
@@ -296,7 +259,7 @@ footer {
   background-color: rgba(0,220,54,.9); /* fallback */
   border-color: rgba(0,220,54,.9); /* fallback */
   transition: background-color 0.1s ease-in,
-        color 0.1s ease-in;
+  color 0.1s ease-in;
 }
 .front-message h1 {
   text-align: center;
@@ -313,10 +276,6 @@ footer {
   margin-bottom: -1px;
   margin-top: 2px;
 }
-/* locations box */
-/* on-site service box */
-/* per hour box */
-/* no-fix box */
 .square {
   position: relative;
   width: 100%;
@@ -342,7 +301,6 @@ footer {
   padding: 10px;
   box-shadow: 1px 3px 5px 0px rgba(3,3,3,.5);
 }
-
 #tablet p {
   color: rgba(255,255,255,1);
   padding: 10px;
@@ -352,16 +310,12 @@ footer {
 .desktop-menu {
   display: none;
 }
-/*virus-removal page*/
-/* computer repair */
-/* computer tune-up */
-/*#####################*/
 section.sales {
   width: 100%;
   height: auto;
-  background-color: white;
-  border: 1px solid #757575;
-  box-shadow: 1px 1px 1px #757575;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(117,117,117,1);
+  box-shadow: 1px 1px 1px rgba(117,117,117,1);
   margin: 0 10px 10px;
   margin-top: 0;
   padding: 1em;
@@ -374,23 +328,37 @@ section.sales {
   background-position: center;
 }
 div.removal {
-   background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+  background-color: rgba(127,127,127,.8);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/computerhands.jpg');
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/computerhands.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/computerhands.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
     ), url('/static/images/computerhands.jpg');
 }
 div.repair {
-  background-image: linear-gradient(
-          rgba(0, 0, 0, 0.3),        
-          rgba(0, 0, 0, 0.3)      
-       ), url('/static/images/computer_arms.jpg');
+  background-color: rgba(127,127,127,.8);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/computer_arms.jpg');
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/computer_arms.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/computer_arms.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)      
+    ), url('/static/images/computer_arms.jpg');
 }
 div.tune-up {
-  background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),                    
-              rgba(0, 0, 0, 0.3)               
-              ), url('/static/images/desk_grey.jpg');
+  background-color: rgba(127,127,127,.8);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/desk_grey.jpg');
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/desk_grey.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/desk_grey.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)               
+    ), url('/static/images/desk_grey.jpg');
 }
 div.sales__header {
   text-align: center;
@@ -400,7 +368,7 @@ div.sales__header {
 }
 h2.sales__title {
   font-weight: 900;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid rgba(224,224,224,1);
   line-height: 24px;
   font-size: 23px;
 }
@@ -423,9 +391,6 @@ a.virus-removal-top:hover {
   color: rgba(255,255,255,1);
   border: 2px solid rgba(0,178,51,.8);
 }
-/*.sales ol {
-  margin-bottom: 1em;
-}*/
 .list-header {
   background-color: rgba(183,181,181,1);
   border: 1px solid rgba(153,161,161,1);
@@ -468,36 +433,33 @@ ol.rounded-list a {
   padding: .4em;
   margin: .5em 0;
   background: rgb(221, 221, 221);
-  color: #444;
+  color: rgba(68,68,68,1);
   text-decoration: none;
   border-radius: .3em;
   transition: all .3s ease-out;
 }
 .rounded-list a:hover{
-    background: #eee;
+  background: rgba(238,238,238,1);
 }
-
 .rounded-list a:hover:before{
-    transform: rotate(360deg);  
+  transform: rotate(360deg);  
 }
-
 .rounded-list a:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -1.3em;
-    top: 50%;
-    margin-top: -1.3em;
-    background: rgb(0, 178, 51);
-    color: rgba(255,255,255,1);
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-    border: .1em solid #fff;
-    text-align: center;
-    font-weight: bold;
-    /*border-radius: 2em;*/
-    transition: all .3s ease-out;
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: rgb(0, 178, 51);
+  color: rgba(255,255,255,1);
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .1em solid rgba(255,255,255,1);
+  text-align: center;
+  font-weight: bold;
+  transition: all .3s ease-out;
 }
 .button-button {
   width: 100%;
@@ -517,13 +479,11 @@ a.virus-removal-cta {
 }
 a.virus-removal-cta:hover {
   background-color: rgba(0,178,51,1);
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255,1);
   text-decoration:underline;
   transition: background-color 0.2s ease-in,
-        color 0.2s ease-in;
+  color 0.2s ease-in;
 }
-/*contact page*/
-/*################*/
 .contact__header {
   text-align: center;
   width: 100%;
@@ -540,7 +500,6 @@ a.virus-removal-cta:hover {
 .contact__header h4 {
   font-size: 1.7em;
 }
-
 h5.contact {
   font-size: 1.6em;
   margin-top: 25px;
@@ -587,7 +546,7 @@ ul.contact__location {
     width: calc((100% - 30px)/2);
     margin-right: 0px;
   }
-   #tablet p {
+  #tablet p {
     font-size: 16px;
   }
   .locations ul li {
@@ -599,76 +558,76 @@ ul.contact__location {
   }
 }
 @media screen and (min-width: 850px) {
-    body {
-      width: 850px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .locations {
-      text-align: right;
-      padding-right: 35px;
-    }
-    #content-desktop {
-      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-      display: -ms-flexbox;  /* TWEENER - IE 10 */
-      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-      display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-      -webkit-flex-wrap: wrap; 
-      flex-wrap: wrap;
-    }
-    a#menu.bars {
-      display: none;
-    }
-    .logo {
-      float: left;
-      margin-left: .5em;
-    }
-    .header {
-      width: 35%;
-      background: -webkit-linear-gradient(bottom,rgba(140,0,0,1),rgba(60,0,0,1));/* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(bottom,rgba(140,0,0,1),rgba(60,0,0,1));/* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(bottom, rgba(140,0,0,1),rgba(60,0,0,1));/* For Firefox 3.6 to 15 */
-      background: linear-gradient(to bottom,rgba(140,0,0,1),rgba(60,0,0,1) );
-      margin-top: 8px;
-      margin-bottom: 10px;
-    }
-    main {
-      width: 65%;
-    }
-    #locations-served p {
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .nav, .nav.open {
-      display: none;
-    }
-    .desktop-menu {
-      display: block;
-      padding-left: 20px;
-      background-color: rgba(0,0,0,.8);
-      margin: 0 5px;
-      margin-top: 50px;
-    }
-    .desktop-menu li {
-      font-size: 1.5em;
-      padding-bottom: 15px;
-      padding-top: 15px;
-      border-bottom: 1px solid rgba(200, 0, 0, 1);
-    }
-    .desktop-menu li:last-of-type {
-      border-bottom: 0;
-    }
-    .desktop-menu a {
-      color: rgba(127,127,127,1);
-      text-decoration: none;
-      font-size: 1.2em;
-      line-height: 1.2em;
-    }
-    .desktop-menu a:hover {
-      color: rgba(255,255,255,1);
-    }
-    a.virus-removal-cta {
-      margin: 160px;
-      padding: 10px 45px;
-    }
+  body {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .locations {
+    text-align: right;
+    padding-right: 35px;
+  }
+  #content-desktop {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
+  a#menu.bars {
+    display: none;
+  }
+  .logo {
+    float: left;
+    margin-left: .5em;
+  }
+  .header {
+    width: 35%;
+    background: -webkit-linear-gradient(bottom,rgba(140,0,0,1),rgba(60,0,0,1));/* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom,rgba(140,0,0,1),rgba(60,0,0,1));/* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(140,0,0,1),rgba(60,0,0,1));/* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom,rgba(140,0,0,1),rgba(60,0,0,1) );
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+  main {
+    width: 65%;
+  }
+  #locations-served p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nav, .nav.open {
+    display: none;
+  }
+  .desktop-menu {
+    display: block;
+    padding-left: 20px;
+    background-color: rgba(0,0,0,.8);
+    margin: 0 5px;
+    margin-top: 50px;
+  }
+  .desktop-menu li {
+    font-size: 1.5em;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(200, 0, 0, 1);
+  }
+  .desktop-menu li:last-of-type {
+    border-bottom: 0;
+  }
+  .desktop-menu a {
+    color: rgba(127,127,127,1);
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+  .desktop-menu a:hover {
+    color: rgba(255,255,255,1);
+  }
+  a.virus-removal-cta {
+    margin: 160px;
+    padding: 10px 45px;
+  }
 }
