@@ -29,9 +29,9 @@ skip_files:
 # - warmup
 
 handlers:
-# - url: /favicon.ico
-#   static_files: menu/static/image/favicon.ico
-#   upload: menu/static/image/favicon.ico
+- url: /computer_icon.ico
+  static_files: jeff/static/images/computer_icon.ico
+  upload: jeff/static/images/computer_icon.ico
 
 # - url: /*.svg
 #   static_files: menu/static/image/*.svg
@@ -49,6 +49,7 @@ handlers:
 
 # - url: /gae_mini_profiler/.*
 #   script: lib.gae_mini_profiler.main.menu
+
 - url: /sitemap.xml    
   static_files: jeff/static/sitemap.xml
   upload: jeff/static/sitemap.xml
