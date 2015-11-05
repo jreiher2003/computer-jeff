@@ -28,7 +28,7 @@ skip_files:
 # inbound_services:
 # - warmup
 
-handlers:
+# handlers:
 # - url: /favicon.ico
 #   static_files: menu/static/image/favicon.ico
 #   upload: menu/static/image/favicon.ico
@@ -49,6 +49,9 @@ handlers:
 
 # - url: /gae_mini_profiler/.*
 #   script: lib.gae_mini_profiler.main.menu
+- url: /(robots\.txt|humans\.txt|crossdomain\.xml|sitemap\.xml)
+  static_files: static/\1
+  upload: static/(robots\.txt|humans\.txt|crossdomain\.xml|sitemap\.xml)
 
 - url: /static
   static_dir: jeff/static
