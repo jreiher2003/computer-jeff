@@ -45,7 +45,6 @@ module.exports = function(grunt) {
       },
       desktop: {
         options: {
-          // url: "https://developers.google.com/speed/docs/insights/v1/getting_started",
           locale: "en_GB",
           strategy: "desktop",
           threshold: 80
@@ -53,13 +52,67 @@ module.exports = function(grunt) {
       },
       mobile: {
         options: {
-          // paths: "https://developers.google.com/speed/docs/insights/v1/getting_started",
           locale: "en_GB",
           strategy: "mobile",
           threshold: 80
         }
       }
-}
+  },
+      responsive_images: {
+      dev: {
+        options: {
+          engine: 'im',
+          sizes: [{
+            width: 1200,
+            suffix: '_large',
+          
+          },{
+            width: 640,
+            suffix: '_small',
+          }]
+        },
+
+        /*
+        You don't need to change this part if you don't change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          src: ['*.{gif,jpg,png,webp}'],
+          cwd: 'jeff/static/images/',
+          dest: 'jeff/static/images/images_build/'
+        }]
+      }
+    },
+
+    /* Clear out the images directory if it exists */
+    clean: {
+      dev: {
+        src: ['jeff/static/images/images_build'],
+      },
+    },
+
+    /* Generate the images directory if it is missing */
+    mkdir: {
+      dev: {
+        options: {
+          create: ['jeff/static/images/images_build']
+        },
+      },
+    },
+    imagemin: {
+      dev: {
+        options: {
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ['*.{jpg,webp,png,svg}'],
+          cwd: 'jeff/static/images/images_build',
+          dest: 'jeff/static/images/images_build'
+        }]
+      }
+    }
 
 
   });
@@ -69,6 +122,12 @@ module.exports = function(grunt) {
   // ===========================================================================
   // we can only load these if they are in our package.json
   // make sure you have run npm install so our app can find these
+
+  grunt.loadNpmTasks('grunt-responsive-images');
+  grunt.loadNpmTasks('grunt-contrib-imagemin')
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-mkdir');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -76,4 +135,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-pagespeed');
 
   grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
+  grunt.registerTask('img', ['clean','mkdir','responsive_images']);
+  grunt.registerTask('min', ['imagemin']);
 };
