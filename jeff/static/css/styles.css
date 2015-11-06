@@ -39,14 +39,14 @@ ul {
 }
 .header {
   width: 100%;
-  min-height: 50px;
+  min-height: 37px;
   background: -webkit-linear-gradient(left,rgba(190,0,0,1),rgba(140,0,0,1));/* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right,rgba(190,0,0,1),rgba(140,0,0,1));/* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, rgba(190,0,0,1),rgba(140,0,0,1));/* For Firefox 3.6 to 15 */
   background: linear-gradient(to right,rgba(190,0,0,1),rgba(140,0,0,1) );
   border: 1px solid rgba(0,0,0,.9);
   box-shadow: 1px 2px 2px 1px rgba(0,0,0,1);
-  padding: 5px;
+  padding: 0px;
 }
 .header__inner {
   width: 100%;
@@ -62,7 +62,7 @@ ul {
   color: rgba(255,255,255,1);
   letter-spacing: 3px;
   font-weight: 300;
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.5);
+  /* box-shadow: 1px 1px 1px 1px rgba(0,0,0,.5); */
   font-size: 2em;
   margin-right: .25em;
 }
@@ -71,10 +71,11 @@ ul {
   position: relative;
   float: left;
   color: rgba(255,255,255,1);
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
-  padding-right: 1px;
-  padding-bottom: 2.3px;
-  font-size: 2em;
+  /* box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4); */
+  /* padding-right: 2px; */
+  /* padding-bottom: 2.3px; */
+  margin-top: 5px;
+  font-size: 1.8em;
   margin-left: .2em;
 }
 .nav {
