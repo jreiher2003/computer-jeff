@@ -216,15 +216,15 @@ footer {
   background-color: rgba(127,127,127,.8);
   background-image: 
   -webkit-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
-    ), url('/static/images/laptop_c.jpg');
+    ), url('/static/images/images_build/laptop_c-640_small.jpg');
   background-image: 
   -moz-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
-    ), url('/static/images/laptop_c.jpg');
+    ), url('/static/images/images_build/laptop_c-640_small.jpg');
   background-image: 
   -o-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
-    ), url('/static/images/laptop_c.jpg');
+    ), url('/static/images/images_build/laptop_c-640_small.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
-    ), url('/static/images/laptop_c.jpg');
+    ), url('/static/images/images_build/laptop_c-640_small.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -558,6 +558,19 @@ ul.contact__location {
   .front-message h1 {
     font-size: 2.4em;
     letter-spacing: 1.5px;
+  }
+  #top-message {
+     background-image: 
+  -webkit-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
+    ), url('/static/images/images_build/large-1200_large.jpg');
+  background-image: 
+  -moz-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
+    ), url('/static/images/images_build/large-1200_large.jpg');
+  background-image: 
+  -o-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
+    ), url('/static/images/images_build/large-1200_large.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)
+    ), url('/static/images/images_build/large-1200_large.jpg');
   }
 }
 @media screen and (min-width: 850px) {
