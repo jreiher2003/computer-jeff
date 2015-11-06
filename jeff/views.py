@@ -5,9 +5,9 @@ from jeff import app
 def index():
     return render_template('home.html')
 
-@app.route('/antivirus')
+@app.route('/virus-removal')
 def virusRemoval():
-	return render_template('antivirus.html')
+	return render_template('virus-removal.html')
 
 @app.route('/computer-repair')
 def computerRepair():
