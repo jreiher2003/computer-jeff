@@ -333,35 +333,35 @@ section.sales {
 div.removal {
   background-color: rgba(127,127,127,.8);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/computerhands.jpg');
+    ), url('/static/images/images_build/computerhands-640_small.jpg');
   background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/computerhands.jpg');
+    ), url('/static/images/images_build/computerhands-640_small.jpg');
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/computerhands.jpg');
+    ), url('/static/images/images_build/computerhands-640_small.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/computerhands.jpg');
+    ), url('/static/images/images_build/computerhands-640_small.jpg');
 }
 div.repair {
   background-color: rgba(127,127,127,.8);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/computer_arms.jpg');
+    ), url('/static/images/images_build/computer_arms-640_small.jpg');
   background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/computer_arms.jpg');
+    ), url('/static/images/images_build/computer_arms-640_small.jpg');
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/computer_arms.jpg');
+    ), url('/static/images/images_build/computer_arms-640_small.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)      
-    ), url('/static/images/computer_arms.jpg');
+    ), url('/static/images/images_build/computer_arms-640_small.jpg');
 }
 div.tune-up {
   background-color: rgba(127,127,127,.8);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/desk_grey.jpg');
+    ), url('/static/images_build/desk_grey-640_small.jpg');
   background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/desk_grey.jpg');
+    ), url('/static/images_build/desk_grey-640_small.jpg');
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
-    ), url('/static/images/desk_grey.jpg');
+    ), url('/static/images_build/desk_grey-640_small.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)               
-    ), url('/static/images/desk_grey.jpg');
+    ), url('/static/images/images_build/desk_grey-640_small.jpg');
 }
 div.sales__header {
   text-align: center;
@@ -610,6 +610,39 @@ ul.contact__location {
   main {
     width: 65%;
   }
+  div.removal {
+  background-color: rgba(127,127,127,.8);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/images_build/computerhands-1200_large.jpg');
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/images_build/computerhands-1200_large.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/images_build/computerhands-1200_large.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/images_build/computerhands-1200_large.jpg');
+}
+div.repair {
+  background-color: rgba(127,127,127,.8);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/images_build/computer_arms-1200_large.jpg');
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/images_build/computer_arms-1200_large.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images/images_build/computer_arms-1200_large.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)      
+    ), url('/static/images/images_build/computer_arms-1200_large.jpg');
+}
+div.tune-up {
+  background-color: rgba(127,127,127,.8);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images_build/desk_grey-1200_large.jpg');
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images_build/desk_grey-1200_large.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)
+    ), url('/static/images_build/desk_grey-1200_large.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)               
+    ), url('/static/images/images_build/desk_grey-1200_large.jpg');
+}
   #locations-served p {
     padding-left: 0;
     padding-right: 0;
