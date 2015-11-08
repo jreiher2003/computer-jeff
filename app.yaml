@@ -33,12 +33,21 @@ handlers:
   static_files: jeff/static/images/computer_icon.ico
   upload: jeff/static/images/computer_icon.ico
 
-# - url: /*.svg
-#   static_files: menu/static/image/*.svg
-#   upload: menu/static/image/*.svg
-#   mime_type: image/svg+xml
+# - url: /(.*\.(gif|png|jpg))$
+#   static_files: static/images/images_build/\1
+#   upload: static/images/images_build/.*\.(gif|png|jpg)$
+
+- url: /*.svg
+  static_files: jeff/static/images/images_build/*.svg
+  upload: jeff/static/images/images_build/*.svg
+  mime_type: image/svg+xml
   # http_headers:
     # Content-Type: 'image/svg+xml'
+
+- url: /*.webp
+  static_files: jeff/static/images/images_build/*.webp
+  upload: jeff/static/images/images_build/*.webp
+  mime_type: image/webp
 
 # - url: /robots.txt
 #   static_files: menu/static/robots.txt
@@ -50,9 +59,9 @@ handlers:
 # - url: /gae_mini_profiler/.*
 #   script: lib.gae_mini_profiler.main.menu
 
-- url: /sitemap.xml    
-  static_files: jeff/static/sitemap.xml
-  upload: jeff/static/sitemap.xml
+- url: /(robots\.txt|humans\.txt|crossdomain\.xml|sitemap\.xml)
+  static_files: jeff/static/\1
+  upload: jeff/static/(robots\.txt|humans\.txt|crossdomain\.xml|sitemap\.xml)
 
 - url: /static
   static_dir: jeff/static
