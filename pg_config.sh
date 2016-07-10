@@ -10,5 +10,10 @@ export WORKON_HOME=~/Envs
 mkdir -p $WORKON_HOME
 source /usr/local/bin/virtualenvwrapper.sh
 mkvirtualenv computer-jeff 
+#workon computer-jeff >> to activate
+# set environmental vars
+# sudo nano $VIRTUAL_ENV/bin/postactivate 
+# export APP_SETTINGS="config.DevelopmentConfig"
+# export SECRET_KEY="this is secret"
 
 pip install Flask 
